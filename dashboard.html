@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                <li class="active"><a href="profile.php">Profil</a></li>
+                <li class="active"><a href="settings.html">Settings</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Dashboard</h2>
+            <form action="dashboard.php" method="post">
+                <label for="newEmail">New Email:</label>
+                <input type="email" id="newEmail" name="newEmail" required>
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>

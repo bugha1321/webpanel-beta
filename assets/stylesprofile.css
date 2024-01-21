@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    padding-top: 20px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.profile-container {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+body.dark-theme {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-theme .sidebar {
+    background-color: #444;
+}
+
+.dark-theme .settings-container {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.sidebar {
+    width: 200px;
+    padding-top: 20px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.sidebar li.active {
+    background-color: #555;
+}
+
+.dark-theme {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-theme .sidebar {
+    background-color: #444;
+}
+
+.dark-theme .settings-container {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+.light-theme {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.light-theme .sidebar {
+    background-color: #333;
+}
+
+.light-theme .settings-container {
+    background-color: #fff;
+    color: #333;
+    border-color: #ddd;
+}
+
+.light-theme .sidebar a {
+    color: white;
+}

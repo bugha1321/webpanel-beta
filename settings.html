@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #333;
+            padding-top: 20px;
+            color: white;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .settings-container {
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .theme-toggle {
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>Settings</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                <li class="active"><a href="profile.php">Profil</a></li>
+                <li class="active"><a href="settings.html">Settings</a></li>
+            </ul>
+        </div>
+        <div class="settings-container">
+            <h2>Settings</h2>
+            <div class="theme-toggle">
+                <label for="themeSwitch">Toggle Theme:</label>
+                <input type="checkbox" id="themeSwitch">
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>
